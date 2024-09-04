@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import { Button } from './stories/Button';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <header className="App-header"> 
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -17,6 +16,13 @@ function App() {
         >
           Learn React
         </a>
+        <Button
+          primary
+          backgroundColor="#ff0000"
+          size="large"
+          label="TestBTN"
+          onClick={() => console.log('Button clicked')}
+        />
       </header>
     </div>
   );
